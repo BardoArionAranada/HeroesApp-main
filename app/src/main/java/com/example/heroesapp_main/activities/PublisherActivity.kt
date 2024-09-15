@@ -1,8 +1,10 @@
 package com.example.heroesapp_main.activities
 
+import HeroesActivity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +18,8 @@ class PublisherActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_publisher)
+        Log.d("PublisherActivity", "Cargando la lista de publishers")
+
 
         val publisherRecyclerView = findViewById<RecyclerView>(R.id.publisher_recycler_view)
         publisherRecyclerView.layoutManager = LinearLayoutManager(this)

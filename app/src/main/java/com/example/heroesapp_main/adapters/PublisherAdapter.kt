@@ -24,7 +24,8 @@ class PublisherAdapter(private val publisherList: List<Publisher>, private val o
         Picasso.get().load(publisher.image).into(holder.publisherImageView)
 
         holder.itemView.setOnClickListener {
-            onPublisherClick(publisher)
+            Log.d("PublisherActivity", "Lista de publishers cargada: " + publishers.size)
+
         }
     }
 
